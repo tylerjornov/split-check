@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Split Check</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💵</text></svg>">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <button class="icon-btn" id="close-btn" aria-label="Close">✕</button>
+      <div class="title">
+        <h1>Split check</h1>
+        <span id="people-count">4 people</span>
+      </div>
+      <button class="done-btn" id="done-btn">Done</button>
+    </header>
+
+    <div class="people" id="people"></div>
+
+    <p class="instruction" id="instruction">Tap a person, then what they had</p>
+
+    <div class="receipt" id="receipt">
+      <div class="receipt-header">
+        <h2>LUCIA TRATTORIA</h2>
+        <p>TABLE 12 · 4 GUESTS</p>
+        <p>THU NOV 5 · 8:42 PM</p>
+      </div>
+      <div class="items" id="items"></div>
+      <div class="totals" id="totals"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
